@@ -49,7 +49,6 @@ and google cloud platorm. Will require **[gcloud cli](https://cloud.google.com/s
 
 ```bash
 #Login GCP GCR
-
 JSON_KEY=$(cat keyfile.json | tr '\n' ' ')
 docker login -e <any.email@willbe.ignored> -u _json_key -p "$JSON_KEY" https://gcr.io
 ```
@@ -62,13 +61,13 @@ docker -- push <cloudname>:latest
 
 #Example
 docker tag def gcr.io/your project name/def:latest  
-gcloud docker -- push gcr.io/your project name/def:latest  
+docker -- push gcr.io/your project name/def:latest  
 ```
 
 
 ```bash
 #Setup credential key for pulling and pushing
-gcloud docker -- pull gcr.io/your project name/def:latest  
+docker -- pull gcr.io/your project name/def:latest  
 ```
 
 ### Firewall
