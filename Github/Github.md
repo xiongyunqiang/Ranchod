@@ -27,6 +27,7 @@ git clone https://github.com/xiongyunqiang/Ranchod.git
 after this your can start coding now.
 
 ### 常用的Command Line
+```bash
 Folder Map: git clone
 Get Lastest Version: git pull
 Check In: git push origin HEAD
@@ -38,6 +39,6 @@ Commit Local: git commit -m "your message"
 New Branch: git branch // if with name will create new branch else will show all branch at local
 Show All changed Files: git status
 Switch Branch: git checkout master //change to master branch
-
+```
 
 
