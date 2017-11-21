@@ -48,23 +48,27 @@ and google cloud platorm. Will require **[gcloud cli](https://cloud.google.com/s
 ### Compute engine
 
 ```bash
+#Login GCP GCR
+
+JSON_KEY=$(cat keyfile.json | tr '\n' ' ')
+docker login -e <any.email@willbe.ignored> -u _json_key -p "$JSON_KEY" https://gcr.io
+```
+
+
+```bash
 #Push local image to gcloud docker repo
 docker tag <localImageName> <cloudname>:latest 
-gcloud docker -- push <cloudname>:latest
+docker -- push <cloudname>:latest
 
 #Example
-docker tag ava-core gcr.io/fx-chatbot-170907/ava-core:latest  
-gcloud auth login
-gcloud docker -- push gcr.io/fx-chatbot-170907/ava-core:latest  
+docker tag def gcr.io/your project name/def:latest  
+gcloud docker -- push gcr.io/your project name/def:latest  
 ```
 
 
 ```bash
 #Setup credential key for pulling and pushing
-JSON_KEY=$(cat keyfile.json | tr '\n' ' ')
-docker login -e <any.email@willbe.ignored> -u _json_key -p "$JSON_KEY" https://gcr.io
-gcloud auth login
-gcloud docker -- pull gcr.io/fx-chatbot-170907/ava-core:latest  
+gcloud docker -- pull gcr.io/your project name/def:latest  
 ```
 
 ### Firewall
