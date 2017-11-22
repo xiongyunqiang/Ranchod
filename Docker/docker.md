@@ -58,17 +58,17 @@ docker login -e <any.email@willbe.ignored> -u _json_key -p "$JSON_KEY" https://g
 ```bash
 #Push local image to gcloud docker repo
 docker tag <localImageName> <cloudname>:latest 
-docker -- push <cloudname>:latest
+docker push <cloudname>:latest
 
 #Example
 docker tag def gcr.io/your project name/def:latest  
-docker -- push gcr.io/your project name/def:latest  
+docker push gcr.io/your project name/def:latest  
 ```
 
 
 ```bash
 #Setup credential key for pulling and pushing
-docker -- pull gcr.io/your project name/def:latest  
+docker pull gcr.io/your project name/def:latest  
 ```
 
 ### Firewall
