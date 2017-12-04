@@ -16,7 +16,7 @@ For Windows:
 cd\
 cd Windows\system32\
 cd..
-cd G:
+G:
 cd MainFolder\SubFolder
 ```
 
