@@ -16,7 +16,7 @@ For Windows:
 cd\
 cd Windows\system32\
 cd..
-cd G:
+G:
 cd MainFolder\SubFolder
 ```
 
@@ -39,6 +39,10 @@ Commit Local: git commit -m "your message"
 New Branch: git branch // if with name will create new branch else will show all branch at local
 Show All changed Files: git status
 Switch Branch: git checkout master //change to master branch
+git clone https://github.com/fx-giant/git-tutorial-sample.git
+git branch -D xxxx
+git commit --amend /add cuccent commint to previous one
+git reset HEAD~1 //rollback commit 
 ```
 
 

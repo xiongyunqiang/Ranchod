@@ -4,8 +4,10 @@
 ```
 mongodump with auth
 mongodump --port <your port> --host <your mongodb host> -u "<you user name>" -p "<your password>"  -- authenticationDatabase "<you authntication db>"
-mogorestore with auth
-mogorestore --port <your port> --host <your mongodb host> -u "<you user name>" -p "<your password>"  -- authenticationDatabase "<you authntication db>" --drop -d <database name> <path to backup file name>
+mongorestore with auth
+mongorestore --port <your port> --host <your mongodb host> -u "<you user name>" -p "<your password>"  -- authenticationDatabase "<you authntication db>" --drop -d <database name> <path to backup file name>
+
+db.copyDatabase('old_name', 'new_name');
 
 *after this step done need patch all missioncontrol all parameter back.
 ```

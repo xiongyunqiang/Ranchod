@@ -61,14 +61,14 @@ docker tag <localImageName> <cloudname>:latest
 docker push <cloudname>:latest
 
 #Example
-docker tag def gcr.io/your project name/def:latest  
-docker push gcr.io/your project name/def:latest  
+docker tag def gcr.io/your-project-name/def:latest  
+docker push gcr.io/your-project-name/def:latest  
 ```
 
 
 ```bash
 #Setup credential key for pulling and pushing
-docker pull gcr.io/your project name/def:latest  
+docker pull gcr.io/your-project-name/def:latest  
 ```
 
 ### Firewall
