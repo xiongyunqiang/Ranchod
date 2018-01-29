@@ -42,6 +42,7 @@ Switch Branch: git checkout master //change to master branch
 Delete Brach: git branch -D brach-name 
 Add Cuccent Commint to previous one： git commit --amend 
 rollback commit:  git reset HEAD~1
+add some thing for test only
 ```
 
 
