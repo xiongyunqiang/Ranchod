@@ -11,6 +11,7 @@ namespace GitFlowTest.Controllers
         public ActionResult Index()
         {
             return View();
+            //add some thing here for test
         }
 
         public ActionResult About()
