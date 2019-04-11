@@ -12,6 +12,7 @@ namespace GitFlowTest.Controllers
         {
             return View();
             //add some thing here for test
+            // fin release
         }
 
         public ActionResult About()
